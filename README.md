@@ -1,56 +1,73 @@
-# DSA-arrays
+# Multi-File C Programming
+
+A menu-driven array operations program implemented in C using multiple source files and a shared header file.
+
 ## Overview
-- Foundation of most data structures
-- Used heavily in algorithms
-- Required for efficient problem solving
-## Memory Structure
-- Linear data structure
-- Stores same type of elements
-- Uses contiguous memory
-## Key Characteristics
-- Fixed size
-- Index-based access
-- Zero-based indexing
-## Internal Working
-- Elements are stored in contiguous memory
-- Address calculated using index
-- Direct access without traversal
-## Operations
-- Traversal (forward, backward)
-- Insertion (first, middle, last)
-- Deletion (first, middle, last)
-- Searching
-- Updating
-## Time Complexity (General)
-- Traversal: **O(n)**
-- Access/Updating: **O(1)**
-- Search:
-  1. Linear Search: **O(n)**
-  2. Binary Search: **O(log n)** *(only for sorted array)*
-- Insertion/Deletion:
-  1. Last Position: **O(1)** *(no shifting required)*
-  2. Any given position except last: **O(n)** *(requires shifting)*
-## Advantages
-- Fast access
-- Simple structure
-- Efficient for fixed-sized data
-## Limitations
-- Fixed size
-- Inefficient insert/delete
-- Memory wastage possible
-## Common Mistakes
-- Index out of bounds
-- Wrong loop limits
-- Using arrays for dynamic data
-## Applications
-- Data storage
-- Buffers
-- Matrices
-- Base for other data structures
-## Learning Outcome
-- Clear understanding of array behaviour
-- Ability to analyze and apply array-based solutions
-## Future Scope
-- Optimization techniques
-- Comparison with linked lists
-- Advanced array problems
+
+This project demonstrates modular programming in C by separating input handling, array operations, and display functionality into different source files.
+
+## Features
+
+- Insert an element at a specified position
+- Update an existing element
+- Delete an element from a specified position
+- Traverse the array in forward order
+- Traverse the array in backward order
+- Check array boundaries and handle invalid positions
+
+## Project Structure
+
+```text
+c-multifile-programming/
+├── .gitignore
+├── array.h
+├── display.c
+├── input.c
+├── logic.c
+├── main.c
+└── README.md
+```
+
+## File Organization
+
+| File | Responsibility |
+|---|---|
+| `array.h` | Shared constant and function declarations |
+| `main.c` | Main menu and program control |
+| `input.c` | Reading user input |
+| `logic.c` | Array insertion, updating, deletion, and boundary checks |
+| `display.c` | Forward and backward traversal |
+
+## Compilation and Execution
+
+Make sure GCC is installed before compiling.
+
+The following commands work on Windows (Git Bash / MinGW), Linux, and macOS:
+
+**Compile:**
+
+```bash
+gcc main.c input.c logic.c display.c -o array_operations
+```
+
+**Run:**
+
+```bash
+./array_operations
+```
+
+On Windows, GCC automatically generates an `.exe` executable.
+
+## Concepts Demonstrated
+
+- Modular programming in C
+- Header files and header guards
+- Function declarations and definitions
+- Separation of concerns
+- Compilation and linking of multiple source files
+- Array operations
+
+## Technologies Used
+
+- C
+- GCC

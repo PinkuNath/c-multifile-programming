@@ -1,0 +1,23 @@
+# VS Code
+.vscode/
+
+# Compiled executables
+*.exe
+*.out
+*.o
+*.obj
+
+# Debug files
+*.pdb
+*.ilk
+*.dSYM/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
