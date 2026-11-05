@@ -42,7 +42,7 @@ c-multifile-programming/
 
 Make sure GCC is installed before compiling.
 
-The following commands work on Windows (Git Bash / MinGW), Linux, and macOS:
+These commands work on Windows (Git Bash / MinGW), Linux, and macOS.
 
 **Compile:**
 
@@ -55,8 +55,6 @@ gcc main.c input.c logic.c display.c -o array_operations
 ```bash
 ./array_operations
 ```
-
-On Windows, GCC automatically generates an `.exe` executable.
 
 ## Concepts Demonstrated
 
